@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>千问办公 · 浏览器连接实操课</title>
+<meta name="description" content="跟着真实截图，逐步安装千问办公 Chrome 扩展，核对权限并验证连接。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside><a class="brand" href="#step-1"><span class="mark">千</span>实操教室</a><div class="course-label">QWEN WORK / CHROME</div><h1>让千问办公<br>连上你的浏览器</h1><p class="aside-intro">看清位置，点击跟做，<br>每一步都有真实画面。</p><nav aria-label="课程章节" id="chapters"></nav><div class="aside-foot"><span class="live-dot"></span>真实操作截图 · macOS<br><small>2026.11.03 · 扩展 1.5.20</small></div></aside>
+<main>
+<header><div><span class="eyebrow">浏览器连接 · 逐步实操</span><span class="pill" id="modeLabel">点击跟做</span></div><button id="openPrompts" class="text-btn">提示词夹 ↗</button></header>
+<section class="heading"><div><p class="step-count" id="stepCount"></p><h2 id="title"></h2><p id="description"></p></div><button id="zoom" class="text-btn">放大截图 ⤢</button></section>
+<section class="viewer" aria-label="操作截图"><div class="screen-top"><span class="screen-dots">● ● ●</span><span id="appName"></span><span class="real-tag">实际截图</span></div><div class="image-wrap" id="imageWrap"><img id="shot" alt=""><button id="hotspot" class="hotspot" aria-label="点击此处进入下一步"><span class="cursor">↖</span><span class="hotspot-text">点这里</span></button></div></section>
+<section class="instruction"><span class="instruction-icon">↳</span><div><strong id="action"></strong><p id="expected"></p></div><button id="done" class="primary">我已完成，下一步 →</button></section>
+<section id="extra" class="extra"></section>
+<footer><div><button id="prev" class="text-btn">← 上一步</button><button id="play" class="text-btn">▷ 自动演示</button></div><span id="progressText"></span><div><button id="fullscreen" class="text-btn">全屏 ⤢</button><button id="next" class="text-btn">下一步 →</button></div></footer><div class="progress"><div id="progress"></div></div>
+<p class="footnote">本课件是操作演示。截图上的点击仅切换课件，不会控制你的电脑。← / → 切换步骤 · 空格播放 / 暂停 · F 全屏</p>
+</main>
+<dialog id="lightbox"><button id="closeZoom" class="close" aria-label="关闭大图">×</button><img id="largeShot" alt="放大的操作截图"></dialog>
+<dialog id="prompts"><button id="closePrompts" class="close" aria-label="关闭提示词夹">×</button><span class="eyebrow">跟做材料</span><h2>提示词夹</h2><p>连接完成后，先用公开网页做一次小测试。</p><pre id="promptText">请使用浏览器连接器读取已连接的 https://example.com 标签页，告诉我页面标题和页面第一段英文原文。只读取这个公开页面，不操作其他标签页，不使用命令行或网络抓取代替浏览器连接器。</pre><button id="copyPrompt" class="primary">一键复制</button><p class="muted">这是本课实际发送的验证提示词；实际执行结果以你的千问办公界面为准。</p></dialog>
+<script src="steps.js"></script><script src="app.js"></script>
+</body></html>
