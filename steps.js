@@ -20,48 +20,10 @@ window.lessonSteps=[
     "chapter": "查看连接说明",
     "app": "千问办公 / 浏览器连接说明",
     "image": "02-install-instructions-private.jpg",
-    "description": "本机界面显示「等待扩展连接」，并提供本地文件夹安装方法。",
-    "action": "保持千问办公打开，接着到 Chrome 安装对应扩展。",
-    "expected": "本课采用 Chrome 商店安装：省去开发者模式和手动加载文件夹。",
-    "extra": "如果你的环境无法访问商店，可按千问办公窗口内提供的本地方法安装；本课没有执行该备用路径。不要复制讲师电脑的用户名路径。"
-  },
-  {
-    "title": "在 Chrome 商店添加扩展",
-    "chapter": "添加官方扩展",
-    "app": "Google Chrome / Chrome 应用商店",
-    "image": "03-chrome-store-private.jpg",
-    "description": "核对扩展名称「千问办公」、开发者「钉钉科技有限公司」与网站 qwenwork.ai。",
-    "action": "点击页面右侧蓝色的「添加至 Chrome」。",
-    "expected": "Chrome 会弹出安装确认框，列出扩展申请的权限。",
-    "hotspot": [
-      66,
-      36,
-      10,
-      5
-    ],
-    "extra": "<a href=\"https://chromewebstore.google.com/detail/qwenwork/ohoaagblcbhagohcegomiejkhgllekgo?hl=zh-CN\" target=\"_blank\" rel=\"noopener\">打开本课使用的 Chrome 商店详情 ↗</a> · 实录版本 1.5.20。"
-  },
-  {
-    "title": "先看权限，再确认安装",
-    "chapter": "核对安装权限",
-    "app": "Google Chrome / 扩展安装确认",
-    "image": "04-permissions-private.jpg",
-    "dialog": true,
-    "description": "安装前确认你愿意授予这些权限；请自己阅读弹窗内容。",
-    "action": "确认权限符合你的用途后，再点击「添加扩展程序」。",
-    "expected": "确认后继续等待，商店按钮会从「添加至 Chrome」变为「从 Chrome 中移除」。",
-    "pause": true,
-    "extra": "权限包括：访问页面调试程序后端、读取和更改所有网站数据、与本机应用通信、查看和管理标签页组。扩展可使用浏览器已有的登录状态执行网页操作。"
-  },
-  {
-    "title": "核对安装成功",
-    "chapter": "核对安装结果",
-    "app": "Google Chrome / Chrome 应用商店",
-    "image": "05-installed-private.jpg",
-    "description": "商店按钮已变为「从 Chrome 中移除」，工具栏出现千问办公图标。",
-    "action": "保留插件；不要点击「从 Chrome 中移除」。",
-    "expected": "这一步确认的是安装完成。还需要连接具体标签页。",
-    "extra": "安装完成不等于当前网页已连接。接下来在公开网页上打开千问办公扩展面板。"
+    "description": "千问办公的连接说明提供本机扩展文件夹。本教程按这个开发者模式流程安装。",
+    "action": "保持千问办公运行，按下面步骤打开 Chrome 扩展管理页。",
+    "expected": "主流程：开启开发者模式 → 加载未打包的扩展程序 → 选择千问办公的扩展文件夹。",
+    "extra": "这是千问办公界面提供的本地加载方式。不同系统的扩展路径不同，以你自己的千问办公显示为准；已安装并连接的学员无需重复安装。"
   },
   {
     "title": "在 Chrome 菜单里找到扩展管理",
@@ -69,15 +31,81 @@ window.lessonSteps=[
     "app": "Google Chrome / 三点菜单",
     "image": "14-chrome-manage-menu-private.jpg",
     "description": "按截图中的三个红框依次操作：右上角「⋮」→「扩展程序」→「管理扩展程序」。",
-    "action": "进入管理页面，找到「千问办公」，确认它处于启用状态。",
-    "expected": "这个入口用来管理扩展。下一步回到普通网页，再打开千问办公的操作面板。",
+    "action": "依次点击「⋮」→「扩展程序」→「管理扩展程序」。",
+    "expected": "扩展管理页右上角有「开发者模式」开关，下一步将它打开。",
     "hotspot": [
       40,
       57,
       20,
       6
     ],
-    "extra": "也可以在 Chrome 地址栏输入 <code>chrome://extensions/</code> 直接打开管理页。需要打开商店时，同一子菜单中有「访问 Chrome 应用商店」。"
+    "extra": "也可以在 Chrome 地址栏输入 <code>chrome://extensions/</code> 直达扩展管理页。"
+  },
+  {
+    "title": "打开右上角的开发者模式",
+    "chapter": "开启开发者模式",
+    "app": "Google Chrome / 扩展程序",
+    "image": "16-developer-mode-private.jpg",
+    "description": "在扩展管理页右上角找到「开发者模式」，将开关切换为蓝色开启状态。",
+    "action": "点击右上角「开发者模式」开关；如果已经开启，保持开启。",
+    "expected": "页面左上角出现「加载未打包的扩展程序」「打包扩展程序」「更新」三个按钮。",
+    "hotspot": [
+      92,
+      9,
+      7.6,
+      32
+    ],
+    "extra": "截图取自你补充的实际界面，只保留本步骤所需的顶部区域。这里只需要开发者模式和「加载未打包的扩展程序」，不需要点击「打包扩展程序」。",
+    "pause": true
+  },
+  {
+    "title": "找到千问办公提供的扩展文件夹",
+    "chapter": "找到本机扩展目录",
+    "app": "千问办公 / 浏览器连接说明",
+    "image": "02-install-instructions-private.jpg",
+    "description": "回到千问办公的「扩展 → 连接器 → 浏览器」说明，找到第 2 项「打开扩展文件夹」。",
+    "action": "点击「打开文件夹」找到 chrome-extension，或点击「复制路径」备用。",
+    "expected": "你需要的是千问办公提供的扩展文件夹，里面包含 manifest.json。",
+    "hotspot": [
+      38.6,
+      65.4,
+      16,
+      3.8
+    ],
+    "extra": "讲师电脑的路径已隐藏。请使用你自己的千问办公显示的路径，不要把整个千问办公应用目录、压缩包或其中单个文件当作扩展目录。"
+  },
+  {
+    "title": "点击加载未打包的扩展程序",
+    "chapter": "加载未打包扩展",
+    "app": "Google Chrome / 扩展程序",
+    "image": "16-developer-mode-private.jpg",
+    "description": "回到 Chrome 扩展管理页，确认开发者模式已开启。",
+    "action": "点击左上角「加载未打包的扩展程序」。",
+    "expected": "系统会弹出文件夹选择窗口，让你选择扩展程序目录。",
+    "hotspot": [
+      0.8,
+      53,
+      12,
+      40
+    ],
+    "extra": "某些 Chrome 版本把同一个按钮写作「加载已解压的扩展程序」。本截图中的名称是「加载未打包的扩展程序」。"
+  },
+  {
+    "title": "选择 chrome-extension 整个文件夹",
+    "chapter": "选择扩展文件夹",
+    "app": "Google Chrome / 选择扩展程序目录",
+    "image": "17-unpacked-folder-private.jpg",
+    "description": "在弹出的窗口中找到千问办公提供的 chrome-extension 文件夹，选中整个文件夹。",
+    "action": "确认目录正确后，点击右下角「选择」（有些系统显示「打开」）。",
+    "expected": "Chrome 会加载这个文件夹；回到扩展列表，应能找到已启用的「千问办公」。",
+    "hotspot": [
+      89.8,
+      90.2,
+      8.2,
+      5.7
+    ],
+    "pause": true,
+    "extra": "macOS 找不到文件夹时：按 ⌘⇧G，粘贴刚才从千问办公复制的本机路径，按回车定位，再点「选择」。应选择包含 manifest.json 的文件夹，不是点击 manifest.json 文件。若已经安装了同名扩展，先核对现有扩展来源和连接状态，避免重复加载。"
   },
   {
     "title": "打开一个公开网页",

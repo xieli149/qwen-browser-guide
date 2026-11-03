@@ -109,3 +109,6 @@ document.addEventListener('keydown', e => {
   if (e.key.toLowerCase() === 'f') $('fullscreen').click();
 });
 show((parseInt(location.hash.replace('#step-', '')) || 1) - 1);
+
+$('openStore').onclick = () => { stop(); $('storeAlternative').showModal(); };
+$('closeStore').onclick = () => $('storeAlternative').close();
