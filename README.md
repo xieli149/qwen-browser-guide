@@ -8,8 +8,8 @@
 
 验证：Chrome 显示“从 Chrome 中移除”；扩展面板显示当前页“已连接”；千问办公显示“扩展已连接”和 Chrome v1.5.20；发送只读取 https://example.com 的任务后，已查看实际 browser get_page_text 工具参数与输出，返回 Title: Example Domain、URL 与正文。
 
-课件 dist/index.html，12 步；assets 保存真实逐步截图。支持章节跳转、点击位置提示、自动演示、关键节点暂停、截图原尺寸放大、提示词复制、全屏、键盘切换和手机布局。课件不控制观众电脑。
+课件 index.html，12 步；assets 保存真实逐步截图。支持章节跳转、点击位置提示、自动演示、关键节点暂停、截图原尺寸放大、提示词复制、全屏、键盘切换和手机布局。课件不控制观众电脑。
 
 参考形式：https://oioi-academy.com/offline-exchange/grokbot-codex-sample/ 。页面源码独立编写。
 
-本地运行：python3 -m http.server 8793 --bind 127.0.0.1 --directory dist
+本地运行：python3 -m http.server 8793 --bind 127.0.0.1 --directory .
